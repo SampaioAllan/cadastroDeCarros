@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form class="formulario" id="formulario">
+        <div>
+            <label>Escreva a marca do carro</label>
+            <input type="text" nome="marca" id="marca" placeholder="Marca" required="required">
+        </div>
+        <div>
+            <label>Escreva o modelo do carro</label>
+            <input type="text" nome="modelo" id="modelo" placeholder="Modelo" required="required">
+        </div>
+        <div>
+            <label>Escreva o ano do carro</label>
+            <input type="text" nome="ano" id="ano" placeholder="Ano" required="required">
+        </div>
+        <div>
+            <label>Escreva o valor do carro</label>
+            <input type="text" nome="valor" id="valor" placeholder="Valor" required="required">
+        </div>
+        <div>
+            <label>Qual a do carro</label>
+            <input type="text" nome="cor" id="cor" placeholder="Cor" required="required">
+        </div>
+        <div>
+            <label>Câmbio</label>
+            <select name="cambio" id="cambio" required="required">                
+                <option value="">Escolha uma opção</option>
+                <option value="true">Automatico</option>
+                <option value="false">Manual</option>
+            </select>
+        </div>
+        <div>
+            <input type="submit" name="cadastrar" id="cadastrar" placeholder="Cadastrar">
+        </div>
+    </form>
+</body>
+<script src="script.js"></script>
+</html>
