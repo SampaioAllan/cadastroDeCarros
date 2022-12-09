@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
     <form class="formulario" id="formulario">
         <div>
@@ -31,18 +29,17 @@
             <input type="text" nome="cor" id="cor" placeholder="Cor" required="required">
         </div>
         <div>
-            <label>Câmbio automático</label>
-            <select name="cambioAutomatico" id="cambioAutomatico" required="required">
+            <label>Câmbio</label>
+            <select name="cambio" id="cambio" required="required">                
                 <option value="">Escolha uma opção</option>
-                <option value="true">Sim</option>
-                <option value="false">Não</option>
+                <option value="true">Automatico</option>
+                <option value="false">Manual</option>
             </select>
         </div>
         <div>
-            <input type="submit" value="Cadastrar">
+            <input type="submit" name="cadastrar" id="cadastrar" placeholder="Cadastrar">
         </div>
     </form>
 </body>
 <script src="script.js"></script>
-
 </html>
