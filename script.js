@@ -21,5 +21,24 @@ function logarcarrosdoLocalStorage() {
     console.log(carros);
 }
 
+function buscarCarrosPorMarcar(listaRecebida, marca) {
+    let listaDeCarros = listaRecebida.filter(function(i){
+        if (i.marca === marca) {
+            return i;
+        }
+    })
+    return listaDeCarros;
+}
+
+function listarMarcasDeCarros(listaRecebida) {
+    let listaDeMarcas = [];
+    listaRecebida.forEach(function(i){
+        if (!listaDeMarcas.includes(i.marca)) {
+            listaDeMarcas.push(i.marca);
+        }
+    })
+    return listaDeMarcas;
+}
+
 formulario.addEventListener('submit', addCarro);
 window.addEventListener('load', logarcarrosdoLocalStorage);
