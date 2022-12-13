@@ -1,26 +1,9 @@
-let carros = [
-    {
-        marca: "fiat",
-        modelo: "uno",
-        ano: 2010,
-        valor: 20000.00,
-        cor: "verde",
-        cambioAutomatico: true
-    },
-    {
-        marca: "fiat",
-        modelo: "500",
-        ano: 2018,
-        valor: 387465.00,
-        cor: "verde",
-        cambioAutomatico: true
-    }
-]
-
 const formulario = document.getElementById("formulario");
 
 function addCarro(e) {
-    e.preventDefault(); 
+    e.preventDefault();
+    let carros = JSON.parse(localStorage.getItem('JSONCarros')) ?? []
+    
     let carro = {
         marca: document.getElementById("marca").value,
         modelo: document.getElementById("modelo").value,
@@ -29,7 +12,7 @@ function addCarro(e) {
         cor: document.getElementById("cor").value,
         cambioAutomatico: document.getElementById("cambioAutomatico").value
     }
-    carros.push(carro)
+    carros.push(carro);
     localStorage.setItem("JSONCarros", JSON.stringify(carros));
 }
 
